@@ -28,3 +28,22 @@ By doing so, `npm install` will always default to `npm install --save --save-exa
 The second option will prevent the leading carat `^` to be included in the dependencies and will therefore produce a more stable build.
 **NOTE**
 Those options are stored in the file `~/.npmrc`.
+
+## 005-custom-grunt-task
+Illustrates how to create a custom task *inline* in a Grunt file. The task is very simple: it creates a file with the current timestamp in the desired location.
+The default timestamp file is `.timestamp`. But the timestamp  file can be customized using:
+```
+timestamp: {
+  options: {
+    file: 'path/to/your/timestamp.file'
+  }
+}
+```
+The example also illustrates how to merge the user configured options with the default options:
+```
+var options = this.options({
+  file: '.timestamp'
+});
+```
+
+**Note** When you cat the timestamp file you will see a human readable timestamp, but if you edit the file you will see a Unix-type timestamp.
