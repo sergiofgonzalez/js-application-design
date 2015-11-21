@@ -6,3 +6,6 @@ Illustrates how to set up the bare minimum Grunt configuration that includes a `
 
 ## 002-setting-up-jshint-task
 Configures `jshint` task using the `grunt-contrib-jshint` plugin. The Gruntfile is given a configuration object for `jshint` target, which in turn will lint the `Gruntfile.js` itself, and the default task of Grunt is set to `jshint`.
+
+## 003-hello-node-modules
+Illustrates the simplest example of custom Node.js module system CommonJS, which resorts to `module.exports` and `require`.
