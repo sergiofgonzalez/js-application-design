@@ -9,3 +9,22 @@ Configures `jshint` task using the `grunt-contrib-jshint` plugin. The Gruntfile 
 
 ## 003-hello-node-modules
 Illustrates the simplest example of custom Node.js module system CommonJS, which resorts to `module.exports` and `require`.
+
+## 004-hello-node-tips
+The directory in which the tips found in `10 Habits of a Happy Node Hacker (2016)` are put into action.
+1. Use `npm init --yes` to scaffold a valid `package.json`.
+2. Edit `package.json` and include the following key:
+```
+"engines": {
+  "node": "4.2.2" // or the version reported by node --version
+}
+```
+3. Configure npm to always save dependencies on the `package.json` manifest file:
+```
+$ npm config set save=true
+$ npm config set save-exact=true
+```
+By doing so, `npm install` will always default to `npm install --save --save-exact`.
+The second option will prevent the leading carat `^` to be included in the dependencies and will therefore produce a more stable build.
+**NOTE**
+Those options are stored in the file `~/.npmrc`.

@@ -1,0 +1,21 @@
+{
+  "name": "004-hello-node-tips",
+  "version": "1.0.0",
+  "description": "Sandbox project for testing the tips from `10 Habits of a Happy Node hacker (2016)`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file://home/ubuntu/Development/git-repos/js-application-design/chapter02-build-tasks-and-flows"
+  },
+  "author": "sergio.f.gonzalez@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "0.4.5"
+  }
+}
