@@ -47,3 +47,8 @@ var options = this.options({
 ```
 
 **Note** When you cat the timestamp file you will see a human readable timestamp, but if you edit the file you will see a Unix-type timestamp.
+
+## 006-custom-grunt-task-adv
+Based on the previous example, explores additional options related to Grunt:
++ Configures the clean task using templates, so that it can read the `timestamp.options.file` configuration option.
++ Uses `grunt.config.requires` in the `timestamp` task implementation to make the task require the `timestamp.options.file` configuration option. Otherwise it will fail.

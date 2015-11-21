@@ -1,0 +1,24 @@
+{
+  "name": "005-custom-grunt-task",
+  "version": "1.0.0",
+  "description": "Custom timestamping task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file://home/ubuntu/Development/git-repos/js-application-design"
+  },
+  "keywords": [],
+  "author": "sergio.f.gonzalez@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-jshint": "0.11.3"
+  }
+}
