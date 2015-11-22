@@ -1,0 +1,26 @@
+{
+  "name": "007-grunt-db-tasks",
+  "version": "1.0.0",
+  "description": "MySQL tasks",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file://home/ubuntu/Development/git-repos/js-application-design"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "async": "1.5.0",
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-jshint": "0.11.3",
+    "mysql": "2.9.0",
+    "underscore": "1.8.3"
+  }
+}

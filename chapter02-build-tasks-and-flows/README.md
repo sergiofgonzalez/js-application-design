@@ -52,3 +52,43 @@ var options = this.options({
 Based on the previous example, explores additional options related to Grunt:
 + Configures the clean task using templates, so that it can read the `timestamp.options.file` configuration option.
 + Uses `grunt.config.requires` in the `timestamp` task implementation to make the task require the `timestamp.options.file` configuration option. Otherwise it will fail.
+
+## 007-grunt-db-tasks
+Defines a set of custom Grunt tasks that perform database operations on a MySQL instance.
+
+### Tasks configuration
+There is a file `db.json` on the project's root folder that is used to configure the database connection information and scripts:
+```json
+{
+  "credentials": {
+    "host": "localhost",            
+    "user": "root",
+    "password": "the-password"
+  },
+  "db": "buildfirst",
+  "scripts": "scripts"
+}
+```
+The scripts are configured according to the following naming strategy:
++ `*.*.up.sql`   : scripts to upgrade the database
++ `*.*.down.sql` : scripts to downgrade the database
++ `*.*.seed.sql` : scripts to populate the database
+
+The `up.sql` and `down.sql` must be paired, so that after running a given *up* file you can execute the paired *down* file to rollback that particular change.
+
+The `Gruntfile.js` needs no further configuration, as it is already configured to read the `db.json` options.
+**TODO:**
+This can be improved by gathering the information from a configured file name (instead of hardcoded), or directly putting the information on the Grunt configuration.
+
+### Implementation
+I've basically copied the implementation from https://github.com/buildfirst/buildfirst/tree/master/ch02/10_mysql-tasks, almost blindly.
+The tasks are defined in the `tasks` directory, and the common custom modules are stored in the `lib` directory.
+In order to perform to keep control of what has been already added, the run scripts are stored in a table called `__v`.
+
+### Usage
+Several tasks are defined:
++ `db-create`   : Creates the configured database if it doesn't previously exist.
++ `db-upgrade`  : Executes the `*.*.up.sql` scripts that have not been previously executed
++ `db-rollback` : Executes the `*.*.down.sql` script for the most recently *up* script.
++ `db-seed`     : Executes the `*.*.seed.sql` scripts.
++ `db-setup`    : Sequentially executes `db-create` + `db-upgrade` + `db-seed`.
