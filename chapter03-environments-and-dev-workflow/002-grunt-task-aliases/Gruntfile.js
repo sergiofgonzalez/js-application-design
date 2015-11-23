@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
-
+  "use strict";
+  
   /* Grunt config object */
   grunt.initConfig({
     jshint: {

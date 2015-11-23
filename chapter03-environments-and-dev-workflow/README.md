@@ -6,3 +6,5 @@ Illustrates how to setup the `jshint` task with several targets. Additionally, t
 
 ## 002-grunt-task-aliases
 Illustrates how to create task aliases in Grunt such as `build:release` or `build:debug` that will trigger differentiated workflows for release and debug distributions, although `build` is not defined as an actual Grunt task.
+
+## 003-secure-config-tasks
