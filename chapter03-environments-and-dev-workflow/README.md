@@ -61,3 +61,27 @@ This way you'll have a way of rebuilding a clear text version of your environmen
 
 **Note**
 I have included an `example` directory with some sample keys and configuration files.
+
+## 004-merge-config-task
+Illustrates how to use the `nconf` npm plugin to merge configuration values with different precedence, so you have multiple options available to configure your application without actually having to rebuild the app.
+
+In the example, there is an `app.js` that uses a custom module `cfg/index.js` to read the configuration and return the results to app.js which just prints them in the console.
+The configuration values for the applications are:
++ `NODE_ENV`
++ `PORT`
+
+The lowest precedence is taken from a file in the working directory called `development.json` which contains the default values for the application.
+Then, you can override these default values with OS environment variables.
+And the top precedence is for parameters passed to your applications.
+
+The following table explains how it works:
+Command                                      |`PORT`  |`NODE_ENV`
+---------------------------------------------|--------|--------------
+`node app`                                   | `3000` | `development`
+`PORT=80 node app`                           | `80`   | `development`
+`NODE_ENV=staging node app`                  | `3000` | `staging`
+`PORT=80 NODE_ENV=staging node app`          | `80`   | `staging`
+`node app --PORT 8080`                       | `8080` | `development`
+`node app --NODE_ENV local node app`         | `3000` | `local`
+`node app --PORT 8080 NODE_ENV local`        | `8080` | `local`
+`NODE_ENV=staging node app --NODE_ENV local` | `3000` | `local`

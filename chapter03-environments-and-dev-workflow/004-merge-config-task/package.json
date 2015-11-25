@@ -1,0 +1,25 @@
+{
+  "name": "004-merge-config-tasks",
+  "version": "1.0.0",
+  "description": "Illustrates how to merge configuration sources",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file://home/ubuntu/Development/git-repos/js-application-design"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.11.3"
+  },
+  "dependencies": {
+    "nconf": "0.8.2"
+  }
+}
