@@ -58,3 +58,6 @@ This configuration piece tells `grunt-pemcrypt` to perform the decryption of the
 6. Whenever your development team needs to set up an environment, distribute the `dev.pem` key. With the key in place the development team just needs to run `grunt pem_decrypt:dev`.
 
 This way you'll have a way of rebuilding a clear text version of your environment-level configuration file from your SCM system.
+
+**Note**
+I have included an `example` directory with some sample keys and configuration files.

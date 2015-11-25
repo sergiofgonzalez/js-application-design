@@ -1,0 +1,7 @@
+{
+  "db": {
+    "url": "localhost:3306/staging",
+    "user": "root",
+    "password": "StagingPass2015"
+  }
+}

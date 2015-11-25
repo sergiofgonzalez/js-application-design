@@ -1,0 +1,7 @@
+{
+  "db": {
+    "url": "localhost:3306/development",
+    "user": "root",
+    "password": "DevelopmentPass2015"
+  }
+}
