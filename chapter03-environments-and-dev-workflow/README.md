@@ -92,3 +92,10 @@ Illustrates how to work with the `watch` task that lets you trigger tasks when a
 In the example, we have a very simple Node.js application that is being developed in the `public` directory. The Gruntfile contains configuration tasks for linting, cleaning directories, copying from the development folder to the build directory but also defines the following tasks using `grunt.registerTask` that orchestrate the simple tasks into something more useful:
 + `build:debug` : cleans the `build` directory (meant to contain the debug build files), runs jshint on the application and grunt files, and then creates a debug build of the application by copying the app to `public`.
 + `dev` : runs the `build:debug` tasks, and then watch for changes on files on the `public` directory. When a change in one of this files is detected, the `watch` task is configured to run the `build:debug` task automatically.
+
+## 006-watch-tasks-advanced
+A more elaborate example of `watch` tasks, that focuses on specifying different watch tasks for the different types of artifacts (js files, html files, configuration, etc.).
+
+If you don't understand the details for this example, please review [005-watch-tasks-simple](## 005-watch-tasks-simple).
+
+In this example it is also used an explicit configuration of JSHint that uses different files for the different types of JavaScript files found in the repository.
