@@ -1,0 +1,19 @@
+{
+  "name": "007-nodemon-no-grunt",
+  "version": "1.0.0",
+  "description": "nodemon example, but outside of grunt watch",
+  "main": "app.js",
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-copy": "0.8.2",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-contrib-watch": "0.6.1"
+  }
+}

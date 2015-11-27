@@ -99,3 +99,14 @@ A more elaborate example of `watch` tasks, that focuses on specifying different 
 If you don't understand the details for this example, please review [005-watch-tasks-simple](## 005-watch-tasks-simple).
 
 In this example it is also used an explicit configuration of JSHint that uses different files for the different types of JavaScript files found in the repository.
+
+## 007-nodemon-no-grunt
+Illustrates how to use `nodemon` plugin to watch and reload a server side app based on Node.js.
+In the example, we create the most basic HTTP server in `app.js` which returns an HTML page for `/` and an error page for whatever other path. The views returned have links for JavaScript files, but those are not well handled by `app.js` so don't expect them to work.
+
+When you use `nodemon app.js` the application will be started (as if using `node app.js`), but will also check for changes in app.js and restart the application as necessary. The `.nodemonignore` has been configured to ignore some directories and the `Gruntfile.js` so that the application is not restarted if one of those files are changed.
+
+The directory also contains a very basic frontend application on the public directory, and the Grunt tasks are configured similarly to [006-watch-tasks-advanced](## 006-watch-tasks-advanced).
+
+**NOTE**
+The following example configures `nodemon` as a Grunt task, but the recommended way to do it is the one explained in this example: running `grunt dev` on one terminal tab and running `nodemon app.js` on another tab, because it's faster.
