@@ -110,3 +110,9 @@ The directory also contains a very basic frontend application on the public dire
 
 **NOTE**
 The following example configures `nodemon` as a Grunt task, but the recommended way to do it is the one explained in this example: running `grunt dev` on one terminal tab and running `nodemon app.js` on another tab, because it's faster.
+
+## 008-nodemon-grunt
+Illustrates how to combine `nodemon` and `watch` in a grunt task. Although this is not optimal, it serves the purpose of demonstrating how to concurrently combine blocking tasks like `watch` and `nodemon`.
+
+## 009-watch-live-reload
+Illustrates how to configure `grunt-watch` to use `livereload` so that you don't have to refresh your browser when a page is changed. 

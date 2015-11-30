@@ -92,3 +92,6 @@ Several tasks are defined:
 + `db-rollback` : Executes the `*.*.down.sql` script for the most recently *up* script.
 + `db-seed`     : Executes the `*.*.seed.sql` scripts.
 + `db-setup`    : Sequentially executes `db-create` + `db-upgrade` + `db-seed`.
+
+## 008-spriting
+Illustrates how to use spriting in a web application using a Grunt plugin `grunt-spritesmith`. In the example, several icons found under the `img/icons` are joined together in a `icons.png` image that includes all of the icons. Additionally, a CSS file is automatically created so that you can easily reference the images via CSS classes in your views.

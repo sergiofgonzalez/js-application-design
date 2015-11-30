@@ -1,0 +1,12 @@
+# ignore .git
+/.git/*
+
+# ignore node modules
+/node_modules/*
+
+# ignore client javascript
+/build/*
+/public/*
+
+# ignore Gruntfile
+Gruntfile.js
