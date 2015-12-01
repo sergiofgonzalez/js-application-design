@@ -95,3 +95,6 @@ Several tasks are defined:
 
 ## 008-spriting
 Illustrates how to use spriting in a web application using a Grunt plugin `grunt-spritesmith`. In the example, several icons found under the `img/icons` are joined together in a `icons.png` image that includes all of the icons. Additionally, a CSS file is automatically created so that you can easily reference the images via CSS classes in your views.
+
+## 009-bundling-through-concatenation
+Illustrates how to use concatenation of static assets using `grunt-contrib-concat`. In the example, the JavaScript files found in `public/js` are concatenated in a `bundle.js` file. The same approach could be applied to CSS files.
