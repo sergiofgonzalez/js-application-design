@@ -101,3 +101,6 @@ Illustrates how to use concatenation of static assets using `grunt-contrib-conca
 
 ## 010-asset-minification
 Illustrates how to implement minification of JavaScript resources using `grunt-contrib-uglify`. In the example, each of the files found in `public/js` is minified and copied to `build/js`. The same approach could be applied to CSS files.
+
+## 011-bundle-then-minify
+Illustrates how to implement bundling and minification of JavaScript resources using [009-bundling-through-concatenation](## 009-bundling-through-concatenation) and [010-asset-minification](## 010-asset-minification) examples.
