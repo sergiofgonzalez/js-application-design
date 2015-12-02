@@ -104,3 +104,8 @@ Illustrates how to implement minification of JavaScript resources using `grunt-c
 
 ## 011-bundle-then-minify
 Illustrates how to implement bundling and minification of JavaScript resources using [009-bundling-through-concatenation](## 009-bundling-through-concatenation) and [010-asset-minification](## 010-asset-minification) examples.
+
+## e01-server
+A simple example that uses an actual *static web server* from which the build files are served to the browser. It leverages both `grunt-contrib-connect` and `grunt-watch` to enable serving the files and **automagically** refreshing the browser with the given changes.
+
+It is important to note how the js files are referenced from `index.html` now that the files are served instead of referenced from the local filesystem.
