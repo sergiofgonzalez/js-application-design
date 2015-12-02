@@ -98,3 +98,6 @@ Illustrates how to use spriting in a web application using a Grunt plugin `grunt
 
 ## 009-bundling-through-concatenation
 Illustrates how to use concatenation of static assets using `grunt-contrib-concat`. In the example, the JavaScript files found in `public/js` are concatenated in a `bundle.js` file. The same approach could be applied to CSS files.
+
+## 010-asset-minification
+Illustrates how to implement minification of JavaScript resources using `grunt-contrib-uglify`. In the example, each of the files found in `public/js` is minified and copied to `build/js`. The same approach could be applied to CSS files.
