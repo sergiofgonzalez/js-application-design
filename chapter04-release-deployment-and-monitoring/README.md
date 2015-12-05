@@ -11,3 +11,6 @@ The configuration of `grunt-contrib-usemin` is a bit obscure because it assumes 
 
 ## 003-critical-inlining
 Illustrates how to use the `grunt-critical` plugin which inlines critical CSS in your HTML page to optimize rendering your page. As you can imagine, this should be done when all other optimizations have already been done.
+
+## 004-version-bump
+Illustrates how to use the `grunt-bump` plugin you can use to automatically update the version number in your `package.json` and optionally, perform a commit and tag that commit (those latter options have been disabled in this example).
