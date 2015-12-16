@@ -1,0 +1,18 @@
+{
+  "name": "002-slugging-v2",
+  "version": "0.0.0",
+  "description": "Returns a candidate URL for a blogging platform using slugging",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC"
+}
