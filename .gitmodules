@@ -1,0 +1,12 @@
+[submodule "chapter04-release-deployment-and-monitoring/005-hello-heroku-node"]
+	path = chapter04-release-deployment-and-monitoring/005-hello-heroku-node
+	url = https://github.com/sergiofgonzalez/hello-heroku-node.git
+[submodule "chapter04-release-deployment-and-monitoring/006-hello-heroku-grunt"]
+	path = chapter04-release-deployment-and-monitoring/006-hello-heroku-grunt
+	url = https://github.com/sergiofgonzalez/hello-heroku-grunt.git
+[submodule "chapter04-release-deployment-and-monitoring/007-heroku-grunt-advanced"]
+	path = chapter04-release-deployment-and-monitoring/007-heroku-grunt-advanced
+	url = https://github.com/sergiofgonzalez/heroku-grunt-connect.git
+[submodule "chapter04-release-deployment-and-monitoring/e01-complete-example"]
+	path = chapter04-release-deployment-and-monitoring/e01-complete-example
+	url = https://github.com/sergiofgonzalez/imdb-cast-fixer.git

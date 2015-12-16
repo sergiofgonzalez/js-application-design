@@ -14,3 +14,28 @@ Illustrates how to use the `grunt-critical` plugin which inlines critical CSS in
 
 ## 004-version-bump
 Illustrates how to use the `grunt-bump` plugin you can use to automatically update the version number in your `package.json` and optionally, perform a commit and tag that commit (those latter options have been disabled in this example).
+
+## 005-hello-heroku-node
+Submodule pointing to https://github.com/sergiofgonzalez/hello-heroku-node.git that illustrates the simplest of applications that you can deploy in Heroku PaaS.
+
+## 006-hello-heroku-grunt
+Submodule pointing to https://github.com/sergiofgonzalez/hello-heroku-grunt.git that illustrates how you can run _Grunt_ tasks as part of the deployment to Heroku.
+
+The procedure is based in creating the application using:
+```
+$ heroku create hello-heroku-grunt-app \
+--buildpack https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git
+```
+
+And configuring a `heroku` task in your `Gruntfile.js` instructing what to do on deployment time.
+
+## 007-heroku-grunt-advanced
+Submodule pointing to https://github.com/sergiofgonzalez/heroku-grunt-connect.git that illustrates a more comprehensive example of how to integrate _Grunt_ tasks in Heroku.
+
+## e01-complete-example
+Submodule pointing to https://github.com/sergiofgonzalez/imdb-cast-fixer.git that illustrates a complete example of the most interesting topics until now:
++ Grunt tasks for debug and release
++ Continuous Development: watching and serving files using `grunt-contrib-connect`
++ Concatenation, uglifying and asset hashing for release
++ Deployment to Heroku PaaS
++ A more comprehensive Node.js HTTP server used for release build
