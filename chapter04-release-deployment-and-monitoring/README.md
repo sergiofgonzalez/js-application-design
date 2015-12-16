@@ -38,4 +38,4 @@ Submodule pointing to https://github.com/sergiofgonzalez/imdb-cast-fixer.git tha
 + Continuous Development: watching and serving files using `grunt-contrib-connect`
 + Concatenation, uglifying and asset hashing for release
 + Deployment to Heroku PaaS
-+ A more comprehensive Node.js HTTP server used for release build
++ A more comprehensive Node.js HTTP server used for release build, using `log4js` logger.
