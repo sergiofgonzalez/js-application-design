@@ -1,5 +1,5 @@
 {
-  "name": "001-slugging",
+  "name": "001-slugging-v1",
   "version": "0.0.0",
   "description": "Returns a hyphenated representation of a string (slugging)",
   "engines": {
