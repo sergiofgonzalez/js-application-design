@@ -47,3 +47,6 @@ This example is much cleaner as it uses a pure function without side effects to 
 
 ## 006-average-v3
 Repeat the exercise, this time using a _functional factory_, that is, a function that returns a function.
+
+## 007-understanding-this
+Several examples that serve as a remainder of `apply`, `call` and `bind` with objects.
