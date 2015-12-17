@@ -29,3 +29,13 @@ returns the url for the article in the form:
 ```
 
 The implementation must follow the *SRP* (that is, the responsibility for computing the date part or the final URL should not be assigned to the `getSlug` function).
+
+## 003-slugging-v3
+Based on [002-slugging-v2](## 002-slugging-v2), add a feature that removes irrelevant words from the slug, so that the SEO works better. The list of words to remove are: {some, the, by, for, of}.
+
+To conform with the *SRP* principle, this functionality should not be part of `getSlug`.
+
+## 004-average-v1
+Write a JavaScript object that is used to track the average. The object must expose a method `add` to make the object consider an additional number and a method `calc` that returns the average so far.
+
+Use the *Information Hiding Principle* so that the object presents a clear interface to the client, and that no internal details transpire.
