@@ -50,3 +50,13 @@ Repeat the exercise, this time using a _functional factory_, that is, a function
 
 ## 007-understanding-this
 Several examples that serve as a remainder of `apply`, `call` and `bind` with objects.
+
+## 008-understanding-hoisting-v1
+An example illustrating hoisting. In the example, a variable is defined, then a function is called, and after that the function is defined. Inside the function, the type of the variable and the value is printed on the screen.
+
+## 009-understanding-hoisting-v2
+Based on [008-understanding-hoisting-v1](## 008-understanding-hoisting-v1), the code is rearranged to show what hoisting does.
+
+Now it makes sense the result from the previous program, as a global variable is defined, but not initialized, then the function is defined, which makes the function reference the current value of the variable (which is still undefined), then the variable is assigned a value and at last the function is called. Because the way scoping works in JavaScript, the function still maintains a reference to the variable when it was undefined.
+
+Clearly, the only solution for this is making the effort of hoisting the variables ourselves, so that we see that type of behavior while writing the code.
