@@ -39,3 +39,6 @@ To conform with the *SRP* principle, this functionality should not be part of `g
 Write a JavaScript object that is used to track the average. The object must expose a method `add` to make the object consider an additional number and a method `calc` that returns the average so far.
 
 Use the *Information Hiding Principle* so that the object presents a clear interface to the client, and that no internal details transpire.
+
+## 005-average-v2
+As the solution from [004-average-v1](## 004-average-v1) based on objects can be hacked, write a function that accepts a sequence of numbers and compute the average.
