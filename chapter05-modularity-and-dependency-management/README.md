@@ -42,3 +42,8 @@ Use the *Information Hiding Principle* so that the object presents a clear inter
 
 ## 005-average-v2
 As the solution from [004-average-v1](## 004-average-v1) based on objects can be hacked, write a function that accepts a sequence of numbers and compute the average.
+
+This example is much cleaner as it uses a pure function without side effects to calculate the average. Besides, code was added to handle both arguments received as arrays `average([1, 2, 3])` or as a sequence of numbers `average(1, 2, 3)`.
+
+## 006-average-v3
+Repeat the exercise, this time using a _functional factory_, that is, a function that returns a function.
