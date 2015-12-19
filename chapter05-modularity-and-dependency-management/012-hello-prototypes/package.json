@@ -1,7 +1,7 @@
 {
-  "name": "010-hello-iife",
+  "name": "012-hello-prototypes",
   "version": "0.0.0",
-  "description": "Understanding iife",
+  "description": "JavaScript prototype features reminder",
   "engines": {
     "node": "4.2.2"
   },
