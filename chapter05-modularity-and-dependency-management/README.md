@@ -60,3 +60,16 @@ Based on [008-understanding-hoisting-v1](## 008-understanding-hoisting-v1), the 
 Now it makes sense the result from the previous program, as a global variable is defined, but not initialized, then the function is defined, which makes the function reference the current value of the variable (which is still undefined), then the variable is assigned a value and at last the function is called. Because the way scoping works in JavaScript, the function still maintains a reference to the variable when it was undefined.
 
 Clearly, the only solution for this is making the effort of hoisting the variables ourselves, so that we see that type of behavior while writing the code.
+
+## 010-hello-iife
+Illustrates how to use an _IIFE_ (Immediately Invoked Function Expression) to create a scope and from that export only the public API of a given module.
+
+## 011-augmenting-through-iife
+An illustration of how to use an _IIFE_ to augment a global object, instead of creating an api from scratch.
+
+## 012-hello-prototypes
+A reminder of the features of JavaScript prototypes properties including:
++ creating objects from other objects using `Object.create`
++ Using `constructors` and `.prototype` to create objects and define its methods
++ Defining inline getters and setters in objects
++ Using `Object.defineProperty` to add setters and getters to objects
