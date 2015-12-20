@@ -73,3 +73,15 @@ A reminder of the features of JavaScript prototypes properties including:
 + Using `constructors` and `.prototype` to create objects and define its methods
 + Defining inline getters and setters in objects
 + Using `Object.defineProperty` to add setters and getters to objects
+
+## 013-hello-prototypal-modularity
+An introduction to prototypal modularity. By using this approach you can define private data inside a closure, and export the public API via a constructor and prototype functions.
+
+In the example, you can also see how to call the constructor defined within the closure:
+```javascript
+var api = (function(){
+  function Lib() {}
+})();
+
+var myObj = new api();
+```
