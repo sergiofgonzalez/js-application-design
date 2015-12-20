@@ -1,0 +1,18 @@
+{
+  "name": "015-prototypal-modularity-v2",
+  "version": "0.0.0",
+  "description": "Advanced example of prototypal modularity, step 2",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC"
+}

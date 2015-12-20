@@ -85,3 +85,37 @@ var api = (function(){
 
 var myObj = new api();
 ```
+
+## 014-prototypal-modularity-v1
+The first step of a more compelling prototypal modularity example. The exercise has been divided in several steps to help its understanding.
+
+A more advanced example of prototypal modularity that shows the following areas at work:
++ augmenting the browser's global window, by adding an api exported from our custom _IIFE_
++ keeping private data hidden from the client
++ defining getters and setters using `Object.defineProperty`
++ keeping private functions hidden from the client
+
+The application does the following:
+Write a browser module that exposes a property `id` (that identifies each of the instances of the library), and another property `version` that prints the version of the library. Both properties will be read-only (i.e. only getters will be available).
+
+## 015-prototypal-modularity-v2
+This example enhances [014-prototypal-modularity-v1](014-prototypal-modularity-v1) by adding several features to the Library. The final goal is to define a method in the prototype that will be executed after a given number of milliseconds. The prototype must also control the status of each of the instances:
++ `idle`: is not doing anything
++ `waiting`: the method is scheduled for execution
+
+The other two states: `executing` and `done` will be implemented in v3
+
+To do that you have to:
++ Include some _static_ data to the library that will keep track the status of each of the instances of the library.
++ Include a read/write accessible property named delay
++ Include a function in the prototype named `getState` that will return the status of a given instance
++ Expose a function in the prototype named `waitForNoReason` that receives the method that will be executed after the specified timeout.
+
+Then in the program, you will invoke that `waitForNoReason` passing an action, and you will see that it is executed after the specified time.
+
+## 016-prototypal-modularity-v3
+This example is the final step in the _prototypal modularity_ series. It enhances what we did on [015-prototypal-modularity-v2](015-prototypal-modularity-v2) by implementing status tracking for the `executing` and `done` states.
+
+This is done by:
++ wrapping the calling of the given action in a private function defined within `waitForNoReason`. The purpose is include code before actually calling the action.
++ providing the client a public `done` method that can be used within the custom action to notify that the action is completed. 
