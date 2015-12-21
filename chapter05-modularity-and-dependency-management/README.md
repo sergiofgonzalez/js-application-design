@@ -125,3 +125,9 @@ Illustrates how CommonJS works. In the example, the simplest of modules is creat
 
 ## 018-nodejs-commonjs
 Illustrates some particularities of Node.js and the CommonJS modules such as:
++ Definition of global variables
++ Exposing a module's public interface
++ Accessing Node.js variables such as `__dirname`
+
+## 019-hello-requirejs
+Illustrates how to work with *Require.js* to handle internal dependencies. In the example, we have a web app which uses *Require.js* to load a main module `app.js`. That module declares a dependency with another one `lib.js`, which exposes a simple function that transform a string to its uppercase representation.
