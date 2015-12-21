@@ -118,4 +118,10 @@ This example is the final step in the _prototypal modularity_ series. It enhance
 
 This is done by:
 + wrapping the calling of the given action in a private function defined within `waitForNoReason`. The purpose is include code before actually calling the action.
-+ providing the client a public `done` method that can be used within the custom action to notify that the action is completed. 
++ providing the client a public `done` method that can be used within the custom action to notify that the action is completed.
+
+## 017-hello-commonjs
+Illustrates how CommonJS works. In the example, the simplest of modules is created: it only exports a string. That module is then used by the main module `app.js` and the exported string is printed on the screen.
+
+## 018-nodejs-commonjs
+Illustrates some particularities of Node.js and the CommonJS modules such as:
