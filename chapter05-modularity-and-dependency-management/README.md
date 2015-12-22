@@ -131,3 +131,6 @@ Illustrates some particularities of Node.js and the CommonJS modules such as:
 
 ## 019-hello-requirejs
 Illustrates how to work with *Require.js* to handle internal dependencies. In the example, we have a web app which uses *Require.js* to load a main module `app.js`. That module declares a dependency with another one `lib.js`, which exposes a simple function that transform a string to its uppercase representation.
+
+## 020-hello-browserify
+Illustrates how to use `grunt-browserify` to leverage CommonJS modules in the browser. In the example, the JavaScript referenced by the HTML page uses `require` to reference a custom module that exports a function. 
