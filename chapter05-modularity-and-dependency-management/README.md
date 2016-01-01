@@ -133,4 +133,7 @@ Illustrates some particularities of Node.js and the CommonJS modules such as:
 Illustrates how to work with *Require.js* to handle internal dependencies. In the example, we have a web app which uses *Require.js* to load a main module `app.js`. That module declares a dependency with another one `lib.js`, which exposes a simple function that transform a string to its uppercase representation.
 
 ## 020-hello-browserify
-Illustrates how to use `grunt-browserify` to leverage CommonJS modules in the browser. In the example, the JavaScript referenced by the HTML page uses `require` to reference a custom module that exports a function. 
+Illustrates how to use `grunt-browserify` to leverage CommonJS modules in the browser. In the example, the JavaScript referenced by the HTML page uses `require` to reference a custom module that exports a function.
+
+## 021-es2015-let
+Illustrates how to use the `let` keyword of ECMSScript 6 (aka ES6, aka ES2015) specification to define variables at block level instead of at function scope.

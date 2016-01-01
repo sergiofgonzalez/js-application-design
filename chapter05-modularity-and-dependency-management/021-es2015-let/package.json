@@ -1,0 +1,18 @@
+{
+  "name": "021-es2015-let",
+  "version": "0.0.0",
+  "description": "Illustrates the block scope on es2015 using `let`",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC"
+}
