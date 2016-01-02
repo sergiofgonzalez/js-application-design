@@ -1,5 +1,5 @@
 {
-  "name": "001-hello-xml-httprequest-sync",
+  "name": "001-hello-xmlhttprequest-sync",
   "version": "0.0.0",
   "description": "Illustrates usage of XMLHttpRequest in a synchronous way",
   "engines": {
