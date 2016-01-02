@@ -17,9 +17,16 @@ public class HttpController {
 	public String getDataText() {
 		LOGGER.debug("Received request for `/data.txt`");
 
+		/* Simulating long-running request processing */
 		StringBuilder sb = new StringBuilder();
-		for (long i = 0; i < 1_000_000; i++) {
+		for (int i = 0; i < 1000; i++) {
 			sb.append("All work and no play makes Jack a dull boy\n");
+		}
+		
+		try {
+			Thread.sleep(5000L);
+		} catch (InterruptedException e) {
+			// swallow
 		}
 
 		return sb.toString();
