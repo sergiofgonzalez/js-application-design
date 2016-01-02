@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Async Flow Control &mdash; 002-hello-xmlhttprequest-sync</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="AppCtrl as appCtrl">
+    <div class="container-fluid">
+      <h1>
+        Using <code>XMLHttpRequest</code> in a synchronous way.<br>
+        <small>
+          Click on the button to submit a synchronous to <code>http://{{appCtrl.appModel.endpoint.host}}:{{appCtrl.appModel.endpoint.port}}/{{appCtrl.appModel.endpoint.path}}</code>
+        </small>
+      </h1>
+      <button type="button" class="btn btn-primary" ng-click="appCtrl.submitSyncHttpRequest()">Sync HTTP request</button>
+      <div class="alert alert-danger" ng-show="appCtrl.errorPreparingRequest">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        {{appCtrl.error}}
+      </div>
+      <table class="table table-bordered" ng-show="appCtrl.buttonClicked && !appCtrl.errorPreparingRequest">
+        <caption>Synchronous Request Results</caption>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>response(0:80)</td>
+            <td>{{appCtrl.response.text}}</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>{{appCtrl.response.status.code}}</td>
+          </tr>
+          <tr>
+            <td>Status Message</td>
+            <td>{{appCtrl.response.status.message}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- container-fluid -->
+  </body>
+</html>
