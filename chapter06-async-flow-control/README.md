@@ -44,10 +44,14 @@ Illustrates how it is not necessary to provide a failure handler and you can use
       // failure handling
     });
 ```
-
 ## 007-xmlhttprequest-async-promises-chaining
 A simple illustration of how promises can be chained. In the example, an XMLHttpRequest is wrapped in a `Promise` and `then` is used to parse the response as a JSON object and then if it succeeds display it on the screen.
 
+## 008-hello-async
+Illustrates the usage of the `async` library.
++ parallel: In the example, three independent tasks are scheduled for execution. An error generation function is used to randomly generate a fabricated error, so that not all executions finish correctly.
++ series: In the example, three correlative tasks are executed asynchronously and communicate through global variables. The first task fill an array with some numbers, the second one displays them on the console and the third one computes the minimum. If the min number is an even number, an error is reported.
++ waterfall: In the example, three correlative tasks tightly coupled are called in sequence and arguments are passed from one to the other.
 
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.

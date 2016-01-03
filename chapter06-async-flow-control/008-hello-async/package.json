@@ -1,0 +1,21 @@
+{
+  "name": "008-hello-async",
+  "version": "0.0.0",
+  "description": "Illustrates usage of async library",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "async": "1.5.1"
+  }
+}
