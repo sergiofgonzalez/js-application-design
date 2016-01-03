@@ -31,4 +31,23 @@ public class HttpController {
 
 		return sb.toString();
 	}
+	
+	@RequestMapping(value = "/fruits.json", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public String getDataJson() {
+		LOGGER.debug("Received request for `/data.json`");
+
+		String jsonFruits = 
+				  "[{\"name\":\"lemon\", \"color\": \"yellow\"},"
+				+ " {\"name\":\"apple\", \"color\": \"red\"},"
+				+ " {\"name\":\"grape\", \"color\": \"green\"}]";
+		
+		/* Simulating long-running request processing */
+		try {
+			Thread.sleep(5000L);
+		} catch (InterruptedException e) {
+			// swallow
+		}
+
+		return jsonFruits;
+	}	
 }
