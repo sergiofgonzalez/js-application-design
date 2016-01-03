@@ -28,11 +28,26 @@ Illustrates how to wrap `XMLHttpRequest` call in a helper function implemented w
 ```javascript
   wrapper(param1Value, param2Value)
     .then(function(valWhenSuccess) {
-      // success handler
+      // success handling
     }, function(valWhenError) {
-      // failure handler
+      // failure handling
     });
 ```
+## 006-xmlhttprequest-async-promises-improved
+Illustrates how it is not necessary to provide a failure handler and you can use the `catch` method instead, which is more readable.
+```javascript
+  wrapper(param1Value, param2Value)
+    .then(function(valWhenSuccess) {
+      // success handling
+    })
+    .catch(function(valWhenError) {
+      // failure handling
+    });
+```
+
+## 007-xmlhttprequest-async-promises-chaining
+A simple illustration of how promises can be chained. In the example, an XMLHttpRequest is wrapped in a `Promise` and `then` is used to parse the response as a JSON object and then if it succeeds display it on the screen.
+
 
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
