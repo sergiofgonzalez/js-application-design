@@ -53,5 +53,9 @@ Illustrates the usage of the `async` library.
 + series: In the example, three correlative tasks are executed asynchronously and communicate through global variables. The first task fill an array with some numbers, the second one displays them on the console and the third one computes the minimum. If the min number is an even number, an error is reported.
 + waterfall: In the example, three correlative tasks tightly coupled are called in sequence and arguments are passed from one to the other.
 
+## 009-hello-promises
+Illustrates the simplest usage of Promises with a sync (`app.js`) and async (`app2.js`) examples. In the first one, a promise is created to be fulfilled when a random number between 0 and 9 is even amd rejected otherwise, and several callbacks are registered for success and failure.
+In `app2.js` the same example is repeated but the execution is performed asynchronously through `setTimeout`, demonstrating that promises are useful for both synchronous and asynchronous use cases.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
