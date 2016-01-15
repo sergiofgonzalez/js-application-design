@@ -57,5 +57,8 @@ Illustrates the usage of the `async` library.
 Illustrates the simplest usage of Promises with a sync (`app.js`) and async (`app2.js`) examples. In the first one, a promise is created to be fulfilled when a random number between 0 and 9 is even amd rejected otherwise, and several callbacks are registered for success and failure.
 In `app2.js` the same example is repeated but the execution is performed asynchronously through `setTimeout`, demonstrating that promises are useful for both synchronous and asynchronous use cases.
 
+## 010-promises-transformation-chain
+Illustrates how to chain transformation callbacks with Promises. In the example, a simple Promise that always succeeds is constructed to return the string representation of a JSON object. Then, a first callback is registered to parse this string and return the JSON object it represents. Then a second callback is chained to receive that object and print some values from it.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
