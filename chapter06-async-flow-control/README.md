@@ -60,5 +60,13 @@ In `app2.js` the same example is repeated but the execution is performed asynchr
 ## 010-promises-transformation-chain
 Illustrates how to chain transformation callbacks with Promises. In the example, a simple Promise that always succeeds is constructed to return the string representation of a JSON object. Then, a first callback is registered to parse this string and return the JSON object it represents. Then a second callback is chained to receive that object and print some values from it.
 
+## 011-chaining-promises
+Illustrates how to chain Promises. In the example, we have a simple web page with 3 buttons:
++ The first one (`sync-request.js`) uses `XMLHttpRequest` to implement a single async call to the GitHub API to retrieve a page of users.
++ The second one (`async-request-ugly.js`) demonstrates how to chain Promises, but in an ugly way. In this case, we are creating another Promise in a callback.
++ The third one (`async-request-pretty.js`) demonstrates the proper way to chain Promises. In the example, async and sync callbacks are mixed, and we see that it is not necessary to wrap responses in Promises when not needing asynchronicity.
+
+The example uses a custom `get` function that executes HTTP requests. Internally, this function simply wraps an async call to `XMLHttpRequest` in a `Promise`. 
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
