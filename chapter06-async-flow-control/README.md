@@ -66,7 +66,10 @@ Illustrates how to chain Promises. In the example, we have a simple web page wit
 + The second one (`async-request-ugly.js`) demonstrates how to chain Promises, but in an ugly way. In this case, we are creating another Promise in a callback.
 + The third one (`async-request-pretty.js`) demonstrates the proper way to chain Promises. In the example, async and sync callbacks are mixed, and we see that it is not necessary to wrap responses in Promises when not needing asynchronicity.
 
-The example uses a custom `get` function that executes HTTP requests. Internally, this function simply wraps an async call to `XMLHttpRequest` in a `Promise`. 
+The example uses a custom `get` function that executes HTTP requests. Internally, this function simply wraps an async call to `XMLHttpRequest` in a `Promise`.
+
+## 012-promises-parallel-flow
+Illustrates how to leverage `Promise.all` to implement parallel async calls with Promises. In the example, we define a function that return a Promise that is fulfilled after a given amount of milliseconds. This function is called in parallel with three different values for that amount and you can see that they are submitted to execution in parallel and that subsequent tasks wait until all the parallel tasks have been completed.
 
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
