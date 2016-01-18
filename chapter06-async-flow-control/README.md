@@ -69,7 +69,11 @@ Illustrates how to chain Promises. In the example, we have a simple web page wit
 The example uses a custom `get` function that executes HTTP requests. Internally, this function simply wraps an async call to `XMLHttpRequest` in a `Promise`.
 
 ## 012-promises-parallel-flow
-Illustrates how to leverage `Promise.all` to implement parallel async calls with Promises. In the example, we define a function that return a Promise that is fulfilled after a given amount of milliseconds. This function is called in parallel with three different values for that amount and you can see that they are submitted to execution in parallel and that subsequent tasks wait until all the parallel tasks have been completed.
+Illustrates how to leverage `Promise.all` to implement parallel async calls with Promises. In the example, we define a function that returns a Promise that is fulfilled after a given amount of milliseconds. This function is called in parallel with three different values for that amount and you can see that they are submitted to execution in parallel and that subsequent tasks wait until all the parallel tasks have been completed.
+
+## 013-promises-and-higher-order-funcs
+Illustrates how to use higher-order functions such as `forEach`, `filter` and `map` with Promises. In the example, we define a function that returns a Promise that is fulfilled after a given amount of seconds, and return as a result the time it has taken before fulfillment.
+Then, we use `filter` to filter out results below a given threshold, then `map` to transform the results and `forEach` to print them.
 
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
