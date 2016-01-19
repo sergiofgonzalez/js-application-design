@@ -78,5 +78,12 @@ Then, we use `filter` to filter out results below a given threshold, then `map` 
 ## 014-promises-throwing-catching-errors
 Illustrates how you can throw errors from Promises instead of calling `reject`. The example also demonstrates that you can catch those failures with `.catch`. In the example, we define a function that returns a `Promise` that is fulfilled if receives a positive number after a given amount of msecs. On the other hand, the `Promise` is immediately rejected if a non-positive number is received, and the rejection is expressed throwing an error rather than calling `reject`. Then, the error is caught calling `.catch`.
 
+## 015-custom-event-emitters-sync
+Illustrates how you can implement a custom event emitter that fires the execution of registered event handlers synchronously when the event occurs. In the example, we define a module `emitter.js` that receives an object and appends a couple of methods to the object received:
++ `.on` -- allows the registration of event handlers for a given event type
++ `.emit` -- allows the generation of an event, and triggers the execution of the registered handlers
+
+Then, on the client code we create an emitter, register a couple of handlers for an event of type `change` and call `emit` to demonstrate how the registered listeners are being executed.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
