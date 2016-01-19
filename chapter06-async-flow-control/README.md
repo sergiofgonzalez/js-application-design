@@ -80,8 +80,8 @@ Illustrates how you can throw errors from Promises instead of calling `reject`. 
 
 ## 015-custom-event-emitters-sync
 Illustrates how you can implement a custom event emitter that fires the execution of registered event handlers synchronously when the event occurs. In the example, we define a module `emitter.js` that receives an object and appends a couple of methods to the object received:
-+ `.on` -- allows the registration of event handlers for a given event type
-+ `.emit` -- allows the generation of an event, and triggers the execution of the registered handlers
++ `.on` &mdash; allows the registration of event handlers for a given event type
++ `.emit` &mdash; allows the generation of an event, and triggers the execution of the registered handlers
 
 Then, on the client code we create an emitter, register a couple of handlers for an event of type `change` and call `emit` to demonstrate how the registered listeners are being executed.
 
