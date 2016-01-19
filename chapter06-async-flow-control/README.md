@@ -85,5 +85,10 @@ Illustrates how you can implement a custom event emitter that fires the executio
 
 Then, on the client code we create an emitter, register a couple of handlers for an event of type `change` and call `emit` to demonstrate how the registered listeners are being executed.
 
+## 016-custom-event-emitters-async
+A variant of [015-custom-event-emitters-sync](##015-custom-event-emitters-sync) in which invoking the event listeners is debounced using setTimeout so that the main execution thread does not get blocked. Two consumers are available:
++ `app.js` &mdash; the same consumer found in the previous example
++ `app2.js` &mdash; a different consumer that fires an unstoppable chain of events.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
