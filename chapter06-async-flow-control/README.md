@@ -90,5 +90,11 @@ A variant of [015-custom-event-emitters-sync](##015-custom-event-emitters-sync) 
 + `app.js` &mdash; the same consumer found in the previous example
 + `app2.js` &mdash; a different consumer that fires an unstoppable chain of events.
 
+## 017-hello-generators
+Introduces the concepts of ES6 (aka ES2015) generators, which allows you to represent sequences through functions. Three examples are presented:
++ `app.js` &mdash; the Fibonacci sequence implemented with a generator
++ `app2.js` &mdash; illustrates the usage of `for..of` syntax to iterate through finite iterators.
++ `app3.js` &mdash; a very simple example of execution suspension in generators.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
