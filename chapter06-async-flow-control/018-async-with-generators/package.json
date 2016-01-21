@@ -1,0 +1,18 @@
+{
+  "name": "018-hello-generators",
+  "version": "0.0.0",
+  "description": "Illustrates the usage of generators to provide async flow",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC"
+}

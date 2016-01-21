@@ -96,5 +96,8 @@ Introduces the concepts of ES6 (aka ES2015) generators, which allows you to repr
 + `app2.js` &mdash; illustrates the usage of `for..of` syntax to iterate through finite iterators.
 + `app3.js` &mdash; a very simple example of execution suspension in generators.
 
+## 018-async-with-generators
+This was supposed to illustrate how to implement asynchronicity with generators, but the thing is, i don't quite get it. Most probably, the idea behind the example is that you can execute logic in parallel to what's being executed on the main thread. I've also included a similar example using Promises which seems much easier to understand.
+
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
