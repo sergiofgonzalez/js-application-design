@@ -1,7 +1,7 @@
 {
-  "name": "016-hello-generators",
+  "name": "017-hello-generators",
   "version": "0.0.0",
-  "description": "Illustrates the Fibonacci sequence using generators",
+  "description": "Illustrates the usage of ES6 generators",
   "engines": {
     "node": "4.2.2"
   },
