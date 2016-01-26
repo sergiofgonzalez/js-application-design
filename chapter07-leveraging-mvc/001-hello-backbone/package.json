@@ -1,7 +1,7 @@
 {
-  "name": "007-xmlhttprequest-async-promises-chaining",
+  "name": "001-hello-backbone",
   "version": "0.0.0",
-  "description": "Illustrates a simple example of Promise chaining",
+  "description": "Simple example that verifies Backbone.js is working",
   "engines": {
     "node": "4.2.2"
   },
