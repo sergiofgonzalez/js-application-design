@@ -13,3 +13,6 @@ Note that the `Gruntfile.js` has been adapted to the new structure that uses Mus
 Illustrates how to work with *Backbone models* which represent business domain data and logic (typically from the backend). In the example, we define a view with an input text field and several output fields. Each time the input field text changes (loses its focus), the output information will get updated.
 
 **Note** the data will not be updated on key events, only when the whole `input` receives a `change` event, which requires for example, losing focus.  
+
+## 004-hello-backbone-collections
+Illustrates how to work with *Backbone collections* to organize models. In the example, we define a *collection* with several entries and a message is displayed in the console each time a new item is added to the collection.
