@@ -16,3 +16,6 @@ Illustrates how to work with *Backbone models* which represent business domain d
 
 ## 004-hello-backbone-collections
 Illustrates how to work with *Backbone collections* to organize models. In the example, we define a *collection* with several entries and a message is displayed in the console each time a new item is added to the collection.
+
+## 005-hello-backbone-routing
+Illustrates how to use *Backbone Routers*. In the example, a list view is displayed, and when the user clicks on the item on the screen a new view is displayed using routing.
