@@ -19,3 +19,9 @@ Illustrates how to work with *Backbone collections* to organize models. In the e
 
 ## 005-hello-backbone-routing
 Illustrates how to use *Backbone Routers*. In the example, a list view is displayed, and when the user clicks on the item on the screen a new view is displayed using routing.
+
+## 006-shopping-list-v1
+Illustrates how to build a simple but complete *SPA* using Backbone. In this first installment, we render a static view: we create a list view `./views/list.js` and a template that uses elements from the `viewModel` defined within the view. In the view we also define an `initialize` method that will be called when the view is instantiated and we include a call to `render` in it.
+The `viewModel` contains an array of items featuring a name and a quantity.
+
+I've also added some basic styling based on Bootstrap.
