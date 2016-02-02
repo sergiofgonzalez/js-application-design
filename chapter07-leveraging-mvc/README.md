@@ -27,3 +27,4 @@ The `viewModel` contains an array of items featuring a name and a quantity.
 I've also added some basic styling based on Bootstrap.
 
 ## 007-shopping-list-with-remove-buttons-v2
+The second installment for the *Shopping List* application, in which we add the functionality to remove items from the list. In the implementation, we switch from a static `ViewModel` to a `Collection` so that we can keep track of changes. Additionally, we create a model directory with a Backbone model in it.
