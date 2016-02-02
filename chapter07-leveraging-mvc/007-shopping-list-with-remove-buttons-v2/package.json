@@ -1,7 +1,7 @@
 {
-  "name": "005-hello-backbone-routing",
+  "name": "007-shopping-list-with-remove-buttons-v2",
   "version": "0.0.0",
-  "description": "Illustrates Backbone routing",
+  "description": "Shopping List with dynamic model based on Collections and remove functionality",
   "engines": {
     "node": "4.2.2"
   },

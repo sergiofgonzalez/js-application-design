@@ -1,7 +1,7 @@
 {
-  "name": "005-hello-backbone-routing",
+  "name": "006-shopping-list-static-model-v1",
   "version": "0.0.0",
-  "description": "Illustrates Backbone routing",
+  "description": "Shopping List application with a static model",
   "engines": {
     "node": "4.2.2"
   },
