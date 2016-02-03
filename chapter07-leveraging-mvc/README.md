@@ -28,3 +28,6 @@ I've also added some basic styling based on Bootstrap.
 
 ## 007-shopping-list-with-remove-buttons-v2
 The second installment for the *Shopping List* application, in which we add the functionality to remove items from the list. In the implementation, we switch from a static `ViewModel` to a `Collection` so that we can keep track of changes. Additionally, we create a model directory with a Backbone model in it.
+
+## 008-shopping-list-add-items-v3
+The third installment for the *Shopping List* application, in which we allow new items to be added to the list. Also, when creating new items, we will make sure its name is not already in the list (to prevent duplicates). When that happens, we will increase the quantity number instead of creating duplicated items.
