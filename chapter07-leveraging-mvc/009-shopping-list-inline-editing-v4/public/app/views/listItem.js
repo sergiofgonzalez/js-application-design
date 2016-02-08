@@ -8,9 +8,6 @@ module.exports = base.extend({
   tagName: "li",
   template: template,
   initialize: function() {
-    //this.model.on("change", this.updateView, this);
-    this.model.on("change", this.updateView, this);
-    this.model.on("change", this.updateView, this);
     this.model.on("change", this.updateView, this);
     this.updateView();
   },
