@@ -33,3 +33,4 @@ The second installment for the *Shopping List* application, in which we add the 
 The third installment for the *Shopping List* application, in which we allow new items to be added to the list. Also, when creating new items, we will make sure its name is not already in the list (to prevent duplicates). When that happens, we will increase the quantity number instead of creating duplicated items.
 
 ## 009-shopping-list-inline-editing-v4
+The fourth installment for the *Shopping List* application, which includes inline editing of the number of items in the shopping list.

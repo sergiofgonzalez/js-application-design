@@ -14,8 +14,8 @@ module.exports = base.extend({
   ]),
   initialize: function() {  /* runs when the view is instantiated => will render itself when it's created */
     this.partials = {};
-    this.collection.on("add", this.additem, this);
-    this.collection.on("remove", this.removeitem, this);
+    this.collection.on("add", this.addItem, this);
+    this.collection.on("remove", this.removeItem, this);
     this.collection.models.forEach(this.addItem, this);
   },
   addItem: function(model) {
