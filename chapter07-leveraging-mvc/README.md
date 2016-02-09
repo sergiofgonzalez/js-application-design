@@ -34,3 +34,6 @@ The third installment for the *Shopping List* application, in which we allow new
 
 ## 009-shopping-list-inline-editing-v4
 The fourth installment for the *Shopping List* application, which includes inline editing of the number of items in the shopping list.
+
+## 010-shopping-list-services-and-routing-v5
+The fifth installament of the *Shopping List* application, which now includes a services that returns the elements of the model (thus emulating a backend) and a router.
