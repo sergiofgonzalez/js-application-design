@@ -25,3 +25,7 @@ In the `test/` directory we create a bunch of test to verify the module's functi
 
 ## 004-hello-sinon
 Illustrates how to use *sinon.js* to spy on functions. In the example, we have a module that accepts a callback that we want to test. The module provides two methods that invoke the callback synchronously and asynchronously. By using *sinon.js* we don't have to create the callback and can make assertions to ensure that the callback is properly called.
+
+## 005-hello-proxyquire
+Illustrates how to use *proxyquire* to proxy require dependencies in your modules, so that you can concentrate in the actual functionality. In the example, we have a module that performs a mapping of the results found in a database. That database retrieval is performed in an external module we are not interested in.
+Therefore, we use *proxyquire* to create a proxy for that module and test the one we're interested in.

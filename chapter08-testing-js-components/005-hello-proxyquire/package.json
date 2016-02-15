@@ -1,0 +1,23 @@
+{
+  "name": "005-hello-proxyquire",
+  "version": "0.0.0",
+  "description": "Illustrates how to use proxyquire to create proxies of your dependencies",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "proxyquire": "1.7.4",
+    "sinon": "1.17.3",
+    "tape": "4.4.0"
+  }
+}
