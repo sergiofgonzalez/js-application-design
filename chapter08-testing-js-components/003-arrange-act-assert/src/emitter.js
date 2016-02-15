@@ -1,15 +1,17 @@
 "use strict";
 
-function emitter(thing) {
+module.exports = function (thing) {
+
   var events = {};
 
-  /* if you don't provide an object, assign a new one to you */
+  /* if the caller doesn't provide an object, assign a new one to you */
   if (!thing) {
-    thing =  {};
+    thing = {};
   }
 
   /* attach an event listener to an event type */
-  thing.on = function on(type, listener) {
+  thing.on = function (type, listener) {
+    /* Did the event type previously exist? */
     if (!events[type]) {
       /* the type did not previously exist */
       events[type] = [listener];
@@ -19,23 +21,20 @@ function emitter(thing) {
     }
   };
 
-  /* fire the event synchronously */
-  thing.emit = function(type) {
-    var eventListeners = events[type];
-    if (!eventListeners) {
+  /* fire events synchronously */
+  thing.emit = function (type) {
+    var evt = events[type];
+    if (!evt) {
       return;
     }
-    /* get rid of first argument (the event type)*/
+    /* get rid of the first argument (the event type) */
     var args = Array.prototype.slice.call(arguments, 1);
-
-    for (var i = 0; i < eventListeners.length; i++) {
-      eventListeners[i].apply(thing, args);
+    for (var i = 0; i < evt.length; i++) {
+      evt[i].apply(thing, args);
     }
   };
 
   /* return the object received or the recently created one */
   return thing;
-}
 
-
-module.exports = emitter;
+};
