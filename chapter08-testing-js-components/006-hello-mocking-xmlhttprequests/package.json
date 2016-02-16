@@ -1,0 +1,29 @@
+{
+  "name": "006-hello-mocking-xmlhttprequests",
+  "version": "0.0.0",
+  "description": "Illustrates how to mock XMLHttpRequest calls",
+  "engines": {
+    "node": "4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/ProAngularJS-Repo.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "13.0.0",
+    "grunt": "0.4.5",
+    "grunt-browserify": "4.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "sinon": "1.17.3",
+    "tape": "4.4.0"
+  },
+  "dependencies": {
+    "superagent": "1.7.2"
+  }
+}

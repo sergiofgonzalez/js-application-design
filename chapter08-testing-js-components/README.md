@@ -29,3 +29,8 @@ Illustrates how to use *sinon.js* to spy on functions. In the example, we have a
 ## 005-hello-proxyquire
 Illustrates how to use *proxyquire* to proxy require dependencies in your modules, so that you can concentrate in the actual functionality. In the example, we have a module that performs a mapping of the results found in a database. That database retrieval is performed in an external module we are not interested in.
 Therefore, we use *proxyquire* to create a proxy for that module and test the one we're interested in.
+
+## 006-hello-mocking-xmlhttprequests
+Illustrates how to mock `XMLHttpRequest` invocations using Sinon. In the example, we have a simple web app that displays in the console the result of calling `https://api.github.com/zen`. In the tests, instead of accessing the API we mock it and perform the necessary assertions.
+Note that the example uses *superagent* to perform HTTP requests.
+To run the tests, you have to use the HTML test runner found in `test/runner.html`.
