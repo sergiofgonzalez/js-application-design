@@ -101,3 +101,6 @@ This was supposed to illustrate how to implement asynchronicity with generators,
 
 ## e01-http-backend
 Simple HTTP backend for the examples in this chapter. See the README.md of the project for details on the endpoints.
+
+## e02-retry-with-async
+Illustrates how to implement a retry strategy with the async library. In the example, we have a state machine that transitions from `Queued` to `InProgress` to `Finished` but the time it takes to transition from one state to the other is random. The goal of the example is to keep requesting the state until state is `Finished` or a certain number of retries have been reached.
