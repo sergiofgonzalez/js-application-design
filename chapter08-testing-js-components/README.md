@@ -34,3 +34,5 @@ Therefore, we use *proxyquire* to create a proxy for that module and test the on
 Illustrates how to mock `XMLHttpRequest` invocations using Sinon. In the example, we have a simple web app that displays in the console the result of calling `https://api.github.com/zen`. In the tests, instead of accessing the API we mock it and perform the necessary assertions.
 Note that the example uses *superagent* to perform HTTP requests.
 To run the tests, you have to use the HTML test runner found in `test/runner.html`.
+
+## 007-hello-dom-testing

@@ -16,6 +16,8 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-tape": "0.0.2",
     "tape": "4.4.0"
   }
 }
