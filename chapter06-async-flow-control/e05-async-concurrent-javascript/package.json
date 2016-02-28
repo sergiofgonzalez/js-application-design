@@ -1,0 +1,30 @@
+{
+  "name": "e05-async-concurrent-javascript",
+  "version": "0.0.0",
+  "description": "Concurrency in JavaScript",
+  "engines": {
+    "node": "4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiofgonzalez/js-application-design.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sergio F. Gonzalez",
+    "email": "sergio.f.gonzalez@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-compress": "1.0.0",
+    "grunt-contrib-copy": "0.8.2",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-tape": "0.0.2",
+    "jshint-stylish": "2.1.0",
+    "tape": "4.4.0"
+  },
+  "dependencies": {}
+}

@@ -104,3 +104,18 @@ Simple HTTP backend for the examples in this chapter. See the README.md of the p
 
 ## e02-retry-with-async
 Illustrates how to implement a retry strategy with the async library. In the example, we have a state machine that transitions from `Queued` to `InProgress` to `Finished` but the time it takes to transition from one state to the other is random. The goal of the example is to keep requesting the state until state is `Finished` or a certain number of retries have been reached.
+
+## e03-the-call-stack
+Illustrates how the call stack works.
+
+## e04-blocking-javascript
+Illustrates what happens when long running invocations are blocking.
+
+## e05-async-concurrent-javascript
+Illustrates how JavaScript enables asynchronivity through async callbacks in the runtime APIs such as `setTimeout`.
+
+## e06-callbacks
+Illustrates how JavaScript lets you use callbacks sync and async.
+
+## e07-closures-and-callbacks
+Illustrates how async callbacks keep a link with the environment right before being placed on the callback queue.
